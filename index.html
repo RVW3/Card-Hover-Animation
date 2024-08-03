@@ -1,45 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Meta Elements -->
+  <!-- Meta Element -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- Title Website -->
-  <title>Card Hover Animation</title>
+  <title>Flipping Card UI Desugn</title>
 
-  <!-- CSS Link -->
+  <!-- Link Cascading Style Sheets(CSS) -->
    <link rel="stylesheet" href="/style.css">
 </head>
 <body>
   <section>
     <div class="container">
-      <div class="card">
+      <div class="card front-face">
         <header>
-          <div class="left-header">
+          <span class="logo">
             <img src="/assets/mc-logo-52.svg" alt="Master Card Logo">
-            <div class="head">Master Card</div>
-          </div>
-
-          <div class="right-header">
-            <img src="/assets/chip.png" alt="Chip Logo">
-          </div>
+            <h5>Master Card</h5>
+          </span>
+          <img src="/assets/chip.png" alt="Chip Logo" class="chip">
         </header>
 
+        <div class="card-details">
+          <div class="name-number">
+            <h6>Card Number</h6>
+            <h5>8050 2030 3020 5040</h5>
+            <h5 class="name">Prem Kumar Shahi</h5>
+          </div>
 
-        <main>
-          <div class="head">Card Number</div>
-          <div class="number">8050 5040 2030 3020</div>
-        </main>
+          <div class="valid-date">
+            <h6>Valid Thru</h6>
+            <h5>05/28</h5>
+          </div>
+        </div>
+      </div>
 
-        
-        <footer>
-          <div class="name">Prem Kumar Shahi</div>
-          <div class="date">Valid Thru <br> <span>05/28</span></div>
-        </footer>
+
+      <div class="card back-face">
+        <h6>
+          For costumer service call +977 4343 3433 or email at mastercard@gmail.com
+        </h6>
+        <span class="magnetic-strip"></span>
+        <div class="signature"><i>005</i></div>
+        <h5>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum eligendi minus repudiandae tempore veritatis odit, cumque deserunt, sequi, laborum enim ab est illum ea facilis sint dolores corrupti. Alias, placeat.
+        </h5>
       </div>
     </div>
   </section>
 </body>
 </html>
-<!-- 1:47 -->
